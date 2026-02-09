@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Root menu -->
+    <menuitem
+        id="menu_real_estate_root"
+        name="Real Estate"
+    />
+
+    <!-- Second level -->
+    <menuitem
+        id="menu_real_estate_advertisements"
+        name="Advertisements"
+        parent="menu_real_estate_root"
+    />
+
+    <!-- Third level (linked to action) -->
+    <menuitem
+        id="menu_real_estate_properties"
+        name="Properties"
+        parent="menu_real_estate_advertisements"
+        action="action_estate_property"
+    />
+
+</odoo>
